@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F8586E174FE49C28CF99D7 /* VocalWriterMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7D6361784CE1C35F6B86A /* VocalWriterMobileApp.swift */; };
+		1D12D5294C748BBBEC954301 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2193D5A130909B7C0D22C672 /* Models.swift */; };
+		3B2D5D5C50EFFE2134E23732 /* song.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A12ACA4E7CE8C42502757AB /* song.c */; };
+		422A01133A16CC76D3B6FE13 /* EnglishLex.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5A0FA95F671736DE0620598D /* EnglishLex.dat */; };
+		49CCFC821906CF2B605B7A02 /* music.c in Sources */ = {isa = PBXBuildFile; fileRef = 455DF4E69E1294C22058EB0A /* music.c */; };
+		55AF8943572C4423175956F5 /* tables.c in Sources */ = {isa = PBXBuildFile; fileRef = 047F402239D159ECF8671BD5 /* tables.c */; };
+		6C7F6EB8D71A6C108C184B47 /* synthglue.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B322112A1617D3826DF7FA3 /* synthglue.c */; };
+		6C856A3D35F145141D9DD75E /* macshim.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B5A3DBEBDB5F4F28D6C80 /* macshim.c */; };
+		78145AA5D130F507DAB86B2D /* VocalWriterMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0418CF60E0455C24F7639B4 /* VocalWriterMobileTests.swift */; };
+		8889040E01E35BF332E5D0C5 /* reverb.c in Sources */ = {isa = PBXBuildFile; fileRef = D061B7148E781858B0D9EBD2 /* reverb.c */; };
+		8A67D4B75B5F22F0268DD0B7 /* VWMobileBridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 38EA8FACCA2A0A06BEEC52A1 /* VWMobileBridge.c */; };
+		98FF20BA5AF0F635628FA18A /* parsephons.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B6A168A77E0A40A72F2AFC /* parsephons.c */; };
+		9A4C3B07F906B3121E029644 /* bank.c in Sources */ = {isa = PBXBuildFile; fileRef = 7649460E93E4CBF6B983B9FD /* bank.c */; };
+		A2004527C676FC80AEC24E65 /* StudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D337FAD0569BF85FD515C8A /* StudioModel.swift */; };
+		A73FEAA5C1252A285C5749DF /* orthtophon.c in Sources */ = {isa = PBXBuildFile; fileRef = 497073F0C649B68422D959BD /* orthtophon.c */; };
+		ADB0D159648AABD36E8A59FC /* expandtracks.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FF923A0A2DC0067C2F01D02 /* expandtracks.c */; };
+		AE0B07805A5997EAAF5F0BDF /* vw_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 79ED0D55704BD62AAF896D15 /* vw_api.c */; };
+		B182AF01F78FEAF755DAFC50 /* VocalWriter.dat in Resources */ = {isa = PBXBuildFile; fileRef = AE4FA622FBDD3EF6EC23CE3E /* VocalWriter.dat */; };
+		B1ED8E06CC86A36297F97438 /* convertsmf.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4AB43ACAE228E9134D1A0 /* convertsmf.c */; };
+		BE7A7647B947EB8EAC805BD5 /* speech.c in Sources */ = {isa = PBXBuildFile; fileRef = 6994E609A77CAA56AB08DC2A /* speech.c */; };
+		C6CEAE78378B08630C8D64C0 /* editor.c in Sources */ = {isa = PBXBuildFile; fileRef = 66DCA8D2109A6CB9A16AFA2E /* editor.c */; };
+		D598BCE32D7E450C24338FFE /* StudioTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D9FC72F14A3EACF9DDB71F /* StudioTabView.swift */; };
+		D7A30B73C8A667BD62F367E3 /* GMSpeech.dat in Resources */ = {isa = PBXBuildFile; fileRef = 18B1DF3BAD37176AFE7A4E99 /* GMSpeech.dat */; };
+		E8A00B23F7241CE2260A8A9E /* GMBank.dat in Resources */ = {isa = PBXBuildFile; fileRef = 9F11A046D3DF35E5D088E7D2 /* GMBank.dat */; };
+		F001F11F120F759874543F71 /* synthapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A65DCD847CEB4A6D43CC4929 /* synthapi.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C47263F2895F293D2032DD45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 391BCCC5FD0A7A2A4000D60C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17725660EB2BFC41FF4BF091;
+			remoteInfo = VocalWriterMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B183387B72C99804FE7E0F /* vocalwriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vocalwriter.h; sourceTree = "<group>"; };
+		047F402239D159ECF8671BD5 /* tables.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tables.c; sourceTree = "<group>"; };
+		18B1DF3BAD37176AFE7A4E99 /* GMSpeech.dat */ = {isa = PBXFileReference; path = GMSpeech.dat; sourceTree = "<group>"; };
+		2193D5A130909B7C0D22C672 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		27B6A168A77E0A40A72F2AFC /* parsephons.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parsephons.c; sourceTree = "<group>"; };
+		38EA8FACCA2A0A06BEEC52A1 /* VWMobileBridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VWMobileBridge.c; sourceTree = "<group>"; };
+		3E0B5A3DBEBDB5F4F28D6C80 /* macshim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = macshim.c; sourceTree = "<group>"; };
+		455DF4E69E1294C22058EB0A /* music.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = music.c; sourceTree = "<group>"; };
+		497073F0C649B68422D959BD /* orthtophon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = orthtophon.c; sourceTree = "<group>"; };
+		5A0FA95F671736DE0620598D /* EnglishLex.dat */ = {isa = PBXFileReference; path = EnglishLex.dat; sourceTree = "<group>"; };
+		62D9FC72F14A3EACF9DDB71F /* StudioTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTabView.swift; sourceTree = "<group>"; };
+		66DCA8D2109A6CB9A16AFA2E /* editor.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = editor.c; sourceTree = "<group>"; };
+		6994E609A77CAA56AB08DC2A /* speech.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = speech.c; sourceTree = "<group>"; };
+		7649460E93E4CBF6B983B9FD /* bank.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bank.c; sourceTree = "<group>"; };
+		79ED0D55704BD62AAF896D15 /* vw_api.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vw_api.c; sourceTree = "<group>"; };
+		7B322112A1617D3826DF7FA3 /* synthglue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = synthglue.c; sourceTree = "<group>"; };
+		7BB21B0B50814964CD4F6CD6 /* VocalWriterMobileTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VocalWriterMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1C645AFA610CDCEF003555 /* VocalWriterMobile.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VocalWriterMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D337FAD0569BF85FD515C8A /* StudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioModel.swift; sourceTree = "<group>"; };
+		7D3AD1AB9EF5D7B85EEA829D /* VocalWriterMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VocalWriterMobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		7FD4AB43ACAE228E9134D1A0 /* convertsmf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = convertsmf.c; sourceTree = "<group>"; };
+		7FF923A0A2DC0067C2F01D02 /* expandtracks.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = expandtracks.c; sourceTree = "<group>"; };
+		96387AEF2D69AD3E08217A20 /* VWMobileBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWMobileBridge.h; sourceTree = "<group>"; };
+		9A12ACA4E7CE8C42502757AB /* song.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = song.c; sourceTree = "<group>"; };
+		9C6A9BF2E38DE533E2AD37DC /* vw_editor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vw_editor.h; sourceTree = "<group>"; };
+		9F11A046D3DF35E5D088E7D2 /* GMBank.dat */ = {isa = PBXFileReference; path = GMBank.dat; sourceTree = "<group>"; };
+		A65DCD847CEB4A6D43CC4929 /* synthapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = synthapi.c; sourceTree = "<group>"; };
+		AE4FA622FBDD3EF6EC23CE3E /* VocalWriter.dat */ = {isa = PBXFileReference; path = VocalWriter.dat; sourceTree = "<group>"; };
+		B3B033EAB18889BB0C950C80 /* vw_synth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vw_synth.h; sourceTree = "<group>"; };
+		BFF7D6361784CE1C35F6B86A /* VocalWriterMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalWriterMobileApp.swift; sourceTree = "<group>"; };
+		C0418CF60E0455C24F7639B4 /* VocalWriterMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalWriterMobileTests.swift; sourceTree = "<group>"; };
+		D061B7148E781858B0D9EBD2 /* reverb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverb.c; sourceTree = "<group>"; };
+		DBBC555DEA0BD8AABCCFD6E5 /* vw_engine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vw_engine.h; sourceTree = "<group>"; };
+		DE8147C283FCBEB7657D0812 /* vw_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vw_types.h; sourceTree = "<group>"; };
+		F7014694371027B3AB3CD5E8 /* vw_frontend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vw_frontend.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0241AECF905CCC255A582752 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C1C645AFA610CDCEF003555 /* VocalWriterMobile.app */,
+				7BB21B0B50814964CD4F6CD6 /* VocalWriterMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07D7C9BA335A98AED41861B6 = {
+			isa = PBXGroup;
+			children = (
+				DCC885F7D4B552C5D04417E4 /* Resources */,
+				2AFFE75B631B2004927AA823 /* VocalWriterMobile */,
+				C8B93B0DAB24640BDDF38C4C /* VocalWriterMobileTests */,
+				0241AECF905CCC255A582752 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AFFE75B631B2004927AA823 /* VocalWriterMobile */ = {
+			isa = PBXGroup;
+			children = (
+				2193D5A130909B7C0D22C672 /* Models.swift */,
+				7D337FAD0569BF85FD515C8A /* StudioModel.swift */,
+				62D9FC72F14A3EACF9DDB71F /* StudioTabView.swift */,
+				BFF7D6361784CE1C35F6B86A /* VocalWriterMobileApp.swift */,
+				FF25C612928CF155B56C542E /* Bridge */,
+				EF7A8EBF319E5DAF91B92F9C /* Engine */,
+			);
+			path = VocalWriterMobile;
+			sourceTree = "<group>";
+		};
+		73219808344CF3DED9FCB15A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7649460E93E4CBF6B983B9FD /* bank.c */,
+				7FD4AB43ACAE228E9134D1A0 /* convertsmf.c */,
+				66DCA8D2109A6CB9A16AFA2E /* editor.c */,
+				7FF923A0A2DC0067C2F01D02 /* expandtracks.c */,
+				3E0B5A3DBEBDB5F4F28D6C80 /* macshim.c */,
+				455DF4E69E1294C22058EB0A /* music.c */,
+				497073F0C649B68422D959BD /* orthtophon.c */,
+				27B6A168A77E0A40A72F2AFC /* parsephons.c */,
+				D061B7148E781858B0D9EBD2 /* reverb.c */,
+				9A12ACA4E7CE8C42502757AB /* song.c */,
+				6994E609A77CAA56AB08DC2A /* speech.c */,
+				A65DCD847CEB4A6D43CC4929 /* synthapi.c */,
+				7B322112A1617D3826DF7FA3 /* synthglue.c */,
+				047F402239D159ECF8671BD5 /* tables.c */,
+				79ED0D55704BD62AAF896D15 /* vw_api.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C8B93B0DAB24640BDDF38C4C /* VocalWriterMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0418CF60E0455C24F7639B4 /* VocalWriterMobileTests.swift */,
+			);
+			path = VocalWriterMobileTests;
+			sourceTree = "<group>";
+		};
+		DCC885F7D4B552C5D04417E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A0FA95F671736DE0620598D /* EnglishLex.dat */,
+				9F11A046D3DF35E5D088E7D2 /* GMBank.dat */,
+				18B1DF3BAD37176AFE7A4E99 /* GMSpeech.dat */,
+				AE4FA622FBDD3EF6EC23CE3E /* VocalWriter.dat */,
+			);
+			name = Resources;
+			path = VocalWriterMobile/Resources;
+			sourceTree = "<group>";
+		};
+		EF7A8EBF319E5DAF91B92F9C /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				F75244D7E9F6F21AB64E1CEB /* include */,
+				73219808344CF3DED9FCB15A /* src */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		F75244D7E9F6F21AB64E1CEB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				00B183387B72C99804FE7E0F /* vocalwriter.h */,
+				9C6A9BF2E38DE533E2AD37DC /* vw_editor.h */,
+				DBBC555DEA0BD8AABCCFD6E5 /* vw_engine.h */,
+				F7014694371027B3AB3CD5E8 /* vw_frontend.h */,
+				B3B033EAB18889BB0C950C80 /* vw_synth.h */,
+				DE8147C283FCBEB7657D0812 /* vw_types.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FF25C612928CF155B56C542E /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				7D3AD1AB9EF5D7B85EEA829D /* VocalWriterMobile-Bridging-Header.h */,
+				38EA8FACCA2A0A06BEEC52A1 /* VWMobileBridge.c */,
+				96387AEF2D69AD3E08217A20 /* VWMobileBridge.h */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17725660EB2BFC41FF4BF091 /* VocalWriterMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 467484C24B7D44BE1B58A073 /* Build configuration list for PBXNativeTarget "VocalWriterMobile" */;
+			buildPhases = (
+				79C1F4CA88A5F487EB4DF1A6 /* Sources */,
+				817C34CCA5533D39EF21B417 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VocalWriterMobile;
+			packageProductDependencies = (
+			);
+			productName = VocalWriterMobile;
+			productReference = 7C1C645AFA610CDCEF003555 /* VocalWriterMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E824BBCBC571D5605C62EEB /* VocalWriterMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1597F4D15A32819FD236453 /* Build configuration list for PBXNativeTarget "VocalWriterMobileTests" */;
+			buildPhases = (
+				50F720753B2DCFD44EC9FC81 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F93B98EE22A1B8EC42C16511 /* PBXTargetDependency */,
+			);
+			name = VocalWriterMobileTests;
+			packageProductDependencies = (
+			);
+			productName = VocalWriterMobileTests;
+			productReference = 7BB21B0B50814964CD4F6CD6 /* VocalWriterMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		391BCCC5FD0A7A2A4000D60C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					17725660EB2BFC41FF4BF091 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 91B1E4A612F4523905DC3C5C /* Build configuration list for PBXProject "VocalWriterMobile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 07D7C9BA335A98AED41861B6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0241AECF905CCC255A582752 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17725660EB2BFC41FF4BF091 /* VocalWriterMobile */,
+				7E824BBCBC571D5605C62EEB /* VocalWriterMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		817C34CCA5533D39EF21B417 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422A01133A16CC76D3B6FE13 /* EnglishLex.dat in Resources */,
+				E8A00B23F7241CE2260A8A9E /* GMBank.dat in Resources */,
+				D7A30B73C8A667BD62F367E3 /* GMSpeech.dat in Resources */,
+				B182AF01F78FEAF755DAFC50 /* VocalWriter.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50F720753B2DCFD44EC9FC81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78145AA5D130F507DAB86B2D /* VocalWriterMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79C1F4CA88A5F487EB4DF1A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D12D5294C748BBBEC954301 /* Models.swift in Sources */,
+				A2004527C676FC80AEC24E65 /* StudioModel.swift in Sources */,
+				D598BCE32D7E450C24338FFE /* StudioTabView.swift in Sources */,
+				8A67D4B75B5F22F0268DD0B7 /* VWMobileBridge.c in Sources */,
+				06F8586E174FE49C28CF99D7 /* VocalWriterMobileApp.swift in Sources */,
+				9A4C3B07F906B3121E029644 /* bank.c in Sources */,
+				B1ED8E06CC86A36297F97438 /* convertsmf.c in Sources */,
+				C6CEAE78378B08630C8D64C0 /* editor.c in Sources */,
+				ADB0D159648AABD36E8A59FC /* expandtracks.c in Sources */,
+				6C856A3D35F145141D9DD75E /* macshim.c in Sources */,
+				49CCFC821906CF2B605B7A02 /* music.c in Sources */,
+				A73FEAA5C1252A285C5749DF /* orthtophon.c in Sources */,
+				98FF20BA5AF0F635628FA18A /* parsephons.c in Sources */,
+				8889040E01E35BF332E5D0C5 /* reverb.c in Sources */,
+				3B2D5D5C50EFFE2134E23732 /* song.c in Sources */,
+				BE7A7647B947EB8EAC805BD5 /* speech.c in Sources */,
+				F001F11F120F759874543F71 /* synthapi.c in Sources */,
+				6C7F6EB8D71A6C108C184B47 /* synthglue.c in Sources */,
+				55AF8943572C4423175956F5 /* tables.c in Sources */,
+				AE0B07805A5997EAAF5F0BDF /* vw_api.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F93B98EE22A1B8EC42C16511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17725660EB2BFC41FF4BF091 /* VocalWriterMobile */;
+			targetProxy = C47263F2895F293D2032DD45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		085E80D06D3DA05E9FB15F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_C_LANGUAGE_STANDARD = c11;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/VocalWriterMobile/Engine/include",
+					"$(SRCROOT)/VocalWriterMobile/Bridge",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-ffp-contract=off",
+					"-fwrapv",
+					"-fno-fast-math",
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-function",
+					"-Wno-pointer-sign",
+					"-Wno-int-to-pointer-cast",
+					"-Wno-pointer-to-int-cast",
+					"-Wno-error=return-type",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "VocalWriterMobile/Bridge/VocalWriterMobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A8C93310A983A09DA9A27CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.vocalwriter.experiments.VocalWriterMobileTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VocalWriterMobile.app/VocalWriterMobile";
+			};
+			name = Release;
+		};
+		AFF412476BD2452E9937D5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.vocalwriter.experiments.VocalWriterMobileTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VocalWriterMobile.app/VocalWriterMobile";
+			};
+			name = Debug;
+		};
+		B3986D491166885BEC108A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_C_LANGUAGE_STANDARD = c11;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/VocalWriterMobile/Engine/include",
+					"$(SRCROOT)/VocalWriterMobile/Bridge",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-ffp-contract=off",
+					"-fwrapv",
+					"-fno-fast-math",
+					"-Wno-unused-variable",
+					"-Wno-unused-parameter",
+					"-Wno-unused-function",
+					"-Wno-pointer-sign",
+					"-Wno-int-to-pointer-cast",
+					"-Wno-pointer-to-int-cast",
+					"-Wno-error=return-type",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "VocalWriterMobile/Bridge/VocalWriterMobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		BD349905028E9F4F6F13DB76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VocalWriter;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.vocalwriter.experiments.mobile;
+				PRODUCT_NAME = VocalWriterMobile;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C00FDC95211C6FE7CB5D098D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VocalWriter;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.vocalwriter.experiments.mobile;
+				PRODUCT_NAME = VocalWriterMobile;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		467484C24B7D44BE1B58A073 /* Build configuration list for PBXNativeTarget "VocalWriterMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00FDC95211C6FE7CB5D098D /* Debug */,
+				BD349905028E9F4F6F13DB76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		91B1E4A612F4523905DC3C5C /* Build configuration list for PBXProject "VocalWriterMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085E80D06D3DA05E9FB15F4A /* Debug */,
+				B3986D491166885BEC108A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B1597F4D15A32819FD236453 /* Build configuration list for PBXNativeTarget "VocalWriterMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFF412476BD2452E9937D5C0 /* Debug */,
+				A8C93310A983A09DA9A27CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 391BCCC5FD0A7A2A4000D60C /* Project object */;
+}
